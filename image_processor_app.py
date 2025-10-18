@@ -4,8 +4,7 @@ import numpy as np
 import cv2
 import io
 
-
-st.title("🖼️ Simple Image Editor")
+st.title("🖼️ Image Processing: Enhance & Explore")
 f = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"])
 
 if f:
@@ -42,3 +41,4 @@ if f:
     st.download_button("💾 Download", buf.getvalue(), "edited.png", "image/png")
 else:
     st.info("👆 Upload an image to start!")
+
